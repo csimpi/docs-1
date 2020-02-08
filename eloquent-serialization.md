@@ -86,6 +86,7 @@ Sometimes you may wish to limit the attributes, such as passwords, that are incl
     }
 
 > {note} When hiding relationships, use the relationship's method name.
+> {note} When hiding attributes the corresponding column will be still requested from the database, and appear in the PHP Object, so it'll take the memory!
 
 Alternatively, you may use the `visible` property to define a white-list of attributes that should be included in your model's array and JSON representation. All other attributes will be hidden when the model is converted to an array or JSON:
 
